@@ -273,7 +273,7 @@ func setClashAPI(options *option.Options, opt *ConfigOptions) {
 		}
 		options.Experimental = &option.ExperimentalOptions{
 			ClashAPI: &option.ClashAPIOptions{
-				ExternalController: fmt.Sprintf("%s:%d", "127.0.0.1", opt.ClashApiPort),
+				ExternalController: fmt.Sprintf("%s:%d", "0.0.0.0", opt.ClashApiPort),
 				Secret:             opt.ClashApiSecret,
 			},
 
